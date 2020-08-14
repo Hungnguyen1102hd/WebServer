@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title><%= title %></title>
+   <link rel='stylesheet' href='/css/style.css' />
+</head>
+<body>
+<div id="header">
+    <center><h1>Welcome to <%= title %></h1></center>
+    <img src="/images/icon.png" height="50px" width="50px"> <%= name %>
+ </div>
+ <div id="showCompanies">
+    <table>
+        <tr>
+            <th>OfficeCode</th>
+            <th>City</th>
+            <th>Phone</th>
+            <th>AddressLine1</th>
+            <th>AddressLine2</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>PostalCode</th>
+            <th>Territory</th>
+        </tr>
+        <% offices.forEach((office, index) => { %>
+        <tr>
+            <td><a href="/<%= office.officeCode %>"><%= office.officeCode %></a></td>
+            <td><%= office.city %></td>
+            <td><%= office.phone %></a></td>
+            <td><%= office.addressLine1 %></a></td>
+            <td><%= office.addressLine2 %></a></td>
+            <td><%= office.state %></a></td>
+            <td><%= office.country %></a></td>
+            <td><%= office.postalCode %></a></td>
+            <td><%= office.territory %></a></td>
+        </tr>
+        <% }) %>
+     </table>
+ </div>
+
+<div id="footer">
+    <center><p>Họ tên: Nguyễn Văn Hưng</p></center>
+    <center><p>Mã sinh viên: 11171945</p></center>
+    <center><p>Số thứ tự : 20</p></center>
+</div>
+
+</body>
+</html>

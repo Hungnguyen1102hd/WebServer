@@ -1,0 +1,59 @@
+body {
+    height: 100%;
+     padding: 50px;
+     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+a {
+    color: #00B7FF;
+}
+table, th, td {
+   border: 1px solid grey;
+   border-collapse: collapse;
+   padding: 5px;
+}
+#header {
+   width: 100%;
+   height: 150px;
+   background-color: aliceblue;
+}
+#header img {
+    margin-left: 10%;
+    margin-top: 30px;
+
+}
+#showCompanies {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 400px;
+    float: left;
+}
+#showCompanies table {
+    margin-left: 17%;
+    margin-top: 10px;
+}
+#showEmployees {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 400px;
+}
+#showEmployees table,a{
+    margin-left: 10%;
+    margin-top: 10px;
+}
+#addEmloyees{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 400px;
+}
+#addEmloyees form {
+    margin-left: 25%;
+    margin-top: 10px;
+}
+#footer {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    background-color: blanchedalmond;
+    text-align: center;
+    float: left;
+ }

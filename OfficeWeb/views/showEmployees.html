@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title><%= title %></title>
+   <link rel='stylesheet' href='/css/style.css' />
+</head>
+<body>
+<div id="header">
+    <center><h1>Welcome to <%= title %></h1></center>
+    <img src="/images/icon.png" height="50px" width="50px"> <%= name %>
+ </div>
+ <div id="showEmployees">
+    <table>
+        <tr>
+            <th>employeeNumber</th>
+            <th>lastName</th>
+            <th>firstName</th>
+            <th>extension</th>
+            <th>email</th>
+            <th>officeCode</th>
+            <th>reportsTo</th>
+            <th>jobTitle</th>
+            <th>Delete Employees</th>
+            <th>Edit Employees</th>
+        </tr>
+        <% employees.forEach((employ, index) => { %>
+        <tr>
+            <td><%= employ.employeeNumber %></td>
+            <td><%= employ.lastName %></td>
+            <td><%= employ.firstName %></td>
+            <td><%= employ.extension %></td>
+            <td><%= employ.email %></td>
+            <td><%= employ.officeCode %></td>
+            <td><%= employ.reportsTo %></td>
+            <td><%= employ.jobTitle %></td>
+            <td><a href="/deleteEmployees/<%= employ.officeCode %>/<%= employ.employeeNumber %>">Delete</a></td>
+            <td><a href="/editEmployees/<%= employ.officeCode %>/<%= employ.employeeNumber %>">Edit</a></td>
+        </tr>
+        <% }) %>
+     </table>
+     <a href="/addEmployees/<%= employees[0].officeCode %>">Add Employ</a><br>
+ </div>
+
+<div id="footer">
+    <center><p>Họ tên: Nguyễn Văn Hưng</p></center>
+    <center><p>Mã sinh viên: 11171945</p></center>
+    <center><p>Số thứ tự : 20</p></center>
+</div>
+
+</body>
+</html>

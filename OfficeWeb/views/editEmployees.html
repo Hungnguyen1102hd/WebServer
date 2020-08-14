@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+    <div id="header">
+        <img src="/images/icon.png" height="50px" width="50px"> <%= title %>
+        <p style="margin-left: 25%;"><%= name %></p>
+    </div>
+    <div id="addEmloyees">
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" value="<%= employees[0].lastName %>" name="lastName" size="40"></td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" value="<%= employees[0].firstName %>" name="firstName" size="40"></td>
+                </tr>
+                <tr>
+                    <td>Extension:</td>
+                    <td><input type="text" value="<%= employees[0].extension %>" name="extension" size="40"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" value="<%= employees[0].email %>" name="email" size="40"></td>
+                </tr>
+                <tr>
+                    <td>ReportsTo:</td>
+                    <td><input type="number" value="<%= employees[0].reportsTo %>" name="reportsTo" size="60"></td>
+                </tr>
+                <tr>
+                    <td>JobTitle:</td>
+                    <td><input type="text" value="<%= employees[0].jobTitle %>" name="jobTitle" size="40"></td>
+                </tr>
+
+            </table>
+            <input type="submit" />
+        </form>
+    </div>
+    <div id="footer">
+        <center>
+            <p>Họ tên: Nguyễn Văn Hưng</p>
+        </center>
+        <center>
+            <p>Mã sinh viên: 11171945</p>
+        </center>
+        <center>
+            <p>Số thứ tự : 20</p>
+        </center>
+    </div>
+</body>
+
+</html>
